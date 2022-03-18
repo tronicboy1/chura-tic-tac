@@ -25,7 +25,7 @@ function App() {
   }, [boardState]);
 
   useEffect(() => {
-    return () => setBoardState(generateNewBoardState(dimension));
+    setBoardState(generateNewBoardState(dimension));
   }, [dimension]);
 
   const handleBoardClick = (rowIndex, columnIndex) => {
